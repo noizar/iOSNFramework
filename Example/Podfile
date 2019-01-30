@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'iOSNFramework_Example' do
+  pod 'iOSNFramework', :path => '../'
+
+  target 'iOSNFramework_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
