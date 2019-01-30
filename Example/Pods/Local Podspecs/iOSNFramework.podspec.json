@@ -1,0 +1,22 @@
+{
+  "name": "iOSNFramework",
+  "version": "0.1.0",
+  "summary": "A short description of iOSNFramework.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Noizar/iOSNFramework",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Noizar": "noizar.jr@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Noizar/iOSNFramework.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "iOSNFramework/Classes/**/*"
+}

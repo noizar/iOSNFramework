@@ -1,0 +1,16 @@
+PODS:
+  - iOSNFramework (0.1.0)
+
+DEPENDENCIES:
+  - iOSNFramework (from `../`)
+
+EXTERNAL SOURCES:
+  iOSNFramework:
+    :path: ../
+
+SPEC CHECKSUMS:
+  iOSNFramework: 00e9d5d4af55bcde6a4b189ab0d4c802135a3ea3
+
+PODFILE CHECKSUM: f780b14de77e107b290a76dd1a05d1240e4dfc48
+
+COCOAPODS: 1.4.0
