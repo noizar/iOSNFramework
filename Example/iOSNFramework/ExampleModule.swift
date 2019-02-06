@@ -16,9 +16,10 @@ protocol ExampleDelegate {
 class ExampleModule: ModuleDelegate,ExampleDelegate {
     let tagTesting = "testing"
     
-    override init(viewStateDelegate: ViewStateDelegate) {
-        super.init(viewStateDelegate: viewStateDelegate)
+    override init(viewStateDelegate: ViewStateDelegate, controller: UIViewController) {
+        super.init(viewStateDelegate: viewStateDelegate, controller: controller)
     }
+
     
     func test(type:Int) {
         network.networkConfiguration(tag: tagTesting)

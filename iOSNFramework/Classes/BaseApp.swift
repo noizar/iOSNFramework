@@ -45,7 +45,9 @@ open class NetworkState {
 
 open class ModuleDelegate{
     open var network:NetworkState
-    public init(viewStateDelegate:ViewStateDelegate) {
+    open var controller:UIViewController
+    public init(viewStateDelegate:ViewStateDelegate,controller:UIViewController) {
         self.network = NetworkState(viewDelegate: viewStateDelegate)
+        self.controller = controller
     }
 }

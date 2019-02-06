@@ -10,11 +10,11 @@ import UIKit
 import iOSNFramework
 
 class ViewController: UIViewController{
-    var module:ExampleModule?
+    private var module:ExampleModule?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        module = ExampleModule(viewStateDelegate: self)
+        module = ExampleModule(viewStateDelegate: self, controller: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +38,12 @@ class ViewController: UIViewController{
     @IBAction func pressFailure(_ sender: Any) {
         module?.test(type: 4)
 
+    }
+    
+    func move()  {
+        let story = UIStoryboard(name: "Main", bundle: nil)
+        let view = story.instantiateViewController(withIdentifier: "next")
+        self.present(view, animated: true, completion: nil)
     }
 }
 
